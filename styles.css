@@ -7,7 +7,7 @@
 
 /* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
+    font-family: fraktur, Century Gothic, Calibri, Arial, sans-serif;
     line-height: 1.6;
     background-color: #f8f8f8;
     color: #333;
@@ -37,10 +37,12 @@ nav ul {
     list-style: none;
     background: #333;
     text-align: center;
+    
 }
 
 nav ul li {
     display: inline;
+    
 }
 
 nav ul li a {
@@ -48,6 +50,16 @@ nav ul li a {
     color: #fff;
     padding: 15px;
     display: inline-block;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+   
+}
+nav ul li a:hover {
+    background-color: rgb(255, 255, 255, 0.05);
+    transform: scale(1.05);
+}
+#seleccion{
+    background-color: rgba(255, 255, 255, 0.226);
+
 }
 
 /* Estilos para el main */
@@ -87,4 +99,10 @@ footer p {
 img {
     width: auto; 
     max-height: 200px;
+    border-radius: 20px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+#instagram:hover{
+    transform: scale(0.9); /* Reducir tamaño al 90% */
+    opacity: 0.7; /* Bajar opacidad al 70% */
 }
